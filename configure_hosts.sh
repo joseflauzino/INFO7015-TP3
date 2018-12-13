@@ -19,3 +19,4 @@ mkdir /tmp/h3
 mkdir /tmp/h3/var
 mkdir /tmp/h3/var/www
 cp -r pages/cats/* /tmp/h3/var/www
+cp -r /etc /tmp/h3
