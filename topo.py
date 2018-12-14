@@ -19,8 +19,8 @@ def myNetwork():
 
     info( '*** Adding controller\n' )
     c0=net.addController(name='c0', controller=RemoteController, ip='127.0.0.2', protocol='tcp', port=6653) # Ryu
-    c1 = Controller( 'c1', port=6634 )
-    net.addController(c1)
+    #c1 = Controller( 'c1', port=6633 )
+    #net.addController(c1)
 
     info( '*** Add switches\n')
     s1 = net.addSwitch('s1', cls=OVSKernelSwitch) # Router1
@@ -57,7 +57,7 @@ def myNetwork():
     s1.start([c0])
     s1.cmd('ovs-vsctl set Bridge s1 protocols=OpenFlow13')
 
-    s2.start([c1])
+    #s2.start([c1])
     #s2.cmd('ovs-vsctl set Bridge s2 protocols=OpenFlow13')
 
     s3.start([c0])
@@ -65,6 +65,7 @@ def myNetwork():
 
     info( '*** Starting Ryu Controller\n')
     c0.cmd('ryu-manager ryu.app.rest_router &')
+    #c0.cmd('./set_ryu_router.sh')
     #c1.cmd('ryu-manager ryu.app.example_switch_13 &')
     info( '*** Starting web servers\n')
     h2.cmd('cd /var/www')
