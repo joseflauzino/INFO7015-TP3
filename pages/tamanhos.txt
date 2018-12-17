@@ -1,0 +1,3 @@
+cats= 31,707896 Megabits
+tapirs= 35,298616 Megabits
+watermelon= 43,228296 Megabits

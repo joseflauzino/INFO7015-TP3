@@ -13,10 +13,10 @@ cp -r /etc /tmp/h1
 mkdir /tmp/h2
 mkdir /tmp/h2/var
 mkdir /tmp/h2/var/www
-cp -r pages/cats/* /tmp/h2/var/www
+cp -r pages/all/* /tmp/h2/var/www
 
 mkdir /tmp/h3
 mkdir /tmp/h3/var
 mkdir /tmp/h3/var/www
-cp -r pages/cats/* /tmp/h3/var/www
+cp -r pages/all/* /tmp/h3/var/www
 cp -r /etc /tmp/h3
