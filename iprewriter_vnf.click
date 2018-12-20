@@ -1,5 +1,5 @@
 // IP-Rewriter
-// Autor: Jose Flauzino
+// Author: Jose Flauzino
 
 
 // Device declaration
