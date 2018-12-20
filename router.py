@@ -105,8 +105,11 @@ def _handle_PacketIn (event):
             
         if str(a.protodst)=="192.168.3.254":
             msg_param = ["00:00:00:00:00:30", packet, a, dpid, inport]
-            
-        event.connection.send(build_msg(msg_param))
+        
+        if 'msg_param' in locals():
+            event.connection.send(build_msg(msg_param))
+        else:
+            log.info("%i %i ignoring unparsed packet", dpid, inport)    
  
 
 

@@ -19,10 +19,10 @@ cp -r /etc /tmp/h1
 mkdir /tmp/h2
 mkdir /tmp/h2/var
 mkdir /tmp/h2/var/www
-cp -r pages/* /tmp/h2/var/www
+cp -r page/* /tmp/h2/var/www
 
 mkdir /tmp/h3
 mkdir /tmp/h3/var
 mkdir /tmp/h3/var/www
-cp -r pages/* /tmp/h3/var/www
+cp -r page/* /tmp/h3/var/www
 cp -r /etc /tmp/h3
