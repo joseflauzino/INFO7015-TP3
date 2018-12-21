@@ -39,13 +39,9 @@ Apesar da maior parte do passos serem feitos por scripts, alguns precisam ser ex
 Os passos no tópico a seguir são genéricos e devem ser executados para cada cenário.
 Os arquivos das capturas de ppacotes devem ser nomeados de acordo com o experimento, pois essa ordem é importante ao gerar a figura.
 Eles devem ser nomeados da seguinte forma:
-- cap1.txt Com VNF (Chrome)
-- cap2.txt Sem VNF (Chrome)
-- cap3.txt Com VNF (Firefox)
-- cap4.txt Sem VNF (Firefox)
 
 Nome do Arquivo | Nome do Cenário    |
- ---------------|--------------------|
+----------------|--------------------|
 cap1.txt        | Com VNF (Chrome)   |
 cap2.txt        | Sem VNF (Chrome)   |
 cap3.txt        | Com VNF (Firefox)  |
