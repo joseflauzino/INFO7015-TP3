@@ -25,7 +25,7 @@ Se tudo ocorreu bem a rede foi criada e a CLI do Mininet está em execução.
 ### Executando o controlador POX
 Abra outro terminal e entre no diretório INFO7015-TP3.
 Copie os arquivos `flow_rules1.json` e `flow_rules1.json` para o diretório pox.
-Normalmente ele está em `/home/<seu_usuario>/pox`
+Normalmente ele está em `/home/<seu_usuario>/pox`.
 Copie também o arquivo `router.py` para o diretório `/home/<seu_usuario>/pox/pox/forwarding`.
 Entre no diretório do POX e digite.
 `./pox.py forwarding.router`
@@ -43,6 +43,13 @@ Eles devem ser nomeados da seguinte forma:
 - cap2.txt Sem VNF (Chrome)
 - cap3.txt Com VNF (Firefox)
 - cap4.txt Sem VNF (Firefox)
+
+Nome do Arquivo | Nome do Cenário    |
+ ---------------|--------------------|
+cap1.txt        | Com VNF (Chrome)   |
+cap2.txt        | Sem VNF (Chrome)   |
+cap3.txt        | Com VNF (Firefox)  |
+cap4.txt        | Sem VNF (Firefox)  |
 
 A ordem de execução é independente, desde que os arquivos sejam nomeados de acordo com a informação acima.
 ### Configurando o arquivo hosts
