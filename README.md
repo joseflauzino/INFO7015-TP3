@@ -9,15 +9,14 @@
 
 ## Obtendo os códigos
 Abra o terminal (recomendávelmente certifique-se de estar em seu diretório home).
-Digite
-`git clone https://github.com/joseflauzino/INFO7015-TP3.git`
+Execute `git clone https://github.com/joseflauzino/INFO7015-TP3.git`.
 
 ## Antes de Iniciar
 É recomendável executar todos os comandos a seguir como super usuário (root)
 
 ## Inicializando a Rede
 ### Executando a topologia do Mininet
-Entre no diretório INFO7015-TP3 e digite
+Entre no diretório INFO7015-TP3 e execute
 `./run`
 
 Se tudo ocorreu bem a rede foi criada e a CLI do Mininet está em execução.
@@ -27,7 +26,7 @@ Abra outro terminal e entre no diretório INFO7015-TP3.
 Copie os arquivos `flow_rules1.json` e `flow_rules1.json` para o diretório pox.
 Normalmente ele está em `/home/<seu_usuario>/pox`.
 Copie também o arquivo `router.py` para o diretório `/home/<seu_usuario>/pox/pox/forwarding`.
-Entre no diretório do POX e digite.
+Entre no diretório do POX e execute.
 `./pox.py forwarding.router`
 
 O controlador será executado, e instalará as regras do arquivo `flow_rules1.json` no switch 1.
@@ -35,9 +34,9 @@ Sua rede deverá estar funcionando no momento.
 
 ## Executando os Experimentos
 ### Observações Importantes
-Apesar da maior parte do passos serem feitos por scripts, alguns precisam ser executados manualmente.
+Apesar da maior parte do passos serem feitos por forma automatizada por scripts, alguns precisam ser executados manualmente.
 Os passos no tópico a seguir são genéricos e devem ser executados para cada cenário.
-Os arquivos das capturas de ppacotes devem ser nomeados de acordo com o experimento, pois essa ordem é importante ao gerar a figura.
+Os arquivos das capturas de pacotes devem ser nomeados de acordo com o experimento, pois seus nomes são importantes ao gerar a figura.
 Eles devem ser nomeados da seguinte forma:
 
 Nome do Arquivo | Nome do Cenário    |
@@ -48,6 +47,7 @@ cap3.txt        | Com VNF (Firefox)  |
 cap4.txt        | Sem VNF (Firefox)  |
 
 A ordem de execução é independente, desde que os arquivos sejam nomeados de acordo com a informação acima.
+
 ### Configurando o arquivo hosts
 Na CLI do Mininet digite `xterm h1` para abrir um terminal do h1.
 No terminal do h1 execute `nano /etc/hosts`.
