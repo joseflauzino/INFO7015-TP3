@@ -15,9 +15,9 @@ def make_plot(data):
 
     x = [1, 2, 3, 4, 5]
     
-    fig = plot.figure(figsize=(8,5))
+    fig = plot.figure()
 
-    axes = fig.add_subplot(111)
+    axes = plot.subplot(111)
     w = 0.5
     axes.bar(1, 22.54, width=w, edgecolor='White', color='lightskyblue',label="Tempo de Referencia",align="center")
     axes.bar(2, data['scenario1']['duration'], width=w, edgecolor='White', color='cadetblue',label="Com VNF (Chrome)", align="center")
@@ -31,8 +31,10 @@ def make_plot(data):
     axes.tick_params(labelbottom=False)
     plot.axis((0,6,0,165))
     axes.set_ylabel("Tempo (em segundos)")
-    #axes.legend(loc="upper right", fontsize=11)
-    #axes.legend(loc=8, bbox_to_anchor=(0.5, -0.1), fontsize=9)
+    axes.legend(loc=9,bbox_to_anchor=(0.5,-0.06),ncol=2,fontsize=12)
+    #axes.legend(loc="upper right", bbox_to_anchor=(0.5, -0.1), ncol=2)
+    # left, bottom, right, top
+    plot.tight_layout(rect=[0, 0.15, 1, 1])
     plot.savefig("fig3.png")
 
 def truncate(f, n):
